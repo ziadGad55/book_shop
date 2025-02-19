@@ -1,6 +1,6 @@
-import 'package:book_shop/pasges/Register_page.dart';
+import 'package:book_shop/pages/Register_page.dart';
 import 'package:book_shop/core/colorApp.dart';
-import 'package:book_shop/pasges/forgot%20password.dart';
+import 'package:book_shop/pages/forgot%20password.dart';
 import 'package:book_shop/widget/buttom.dart';
 import 'package:book_shop/widget/field.dart';
 import 'package:flutter/material.dart';

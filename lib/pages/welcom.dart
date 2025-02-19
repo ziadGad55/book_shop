@@ -1,5 +1,5 @@
-import 'package:book_shop/Login_page.dart';
-import 'package:book_shop/Register_page.dart';
+import 'package:book_shop/pages/Login_page.dart';
+import 'package:book_shop/pages/Register_page.dart';
 import 'package:book_shop/core/colorApp.dart';
 import 'package:book_shop/widget/buttom.dart';
 import 'package:flutter/material.dart';

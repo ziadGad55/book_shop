@@ -1,4 +1,4 @@
-import 'package:book_shop/welcom.dart';
+import 'package:book_shop/pages/welcom.dart';
 import 'package:flutter/material.dart';
 
 void main() {
