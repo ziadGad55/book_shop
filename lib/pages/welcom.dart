@@ -4,14 +4,9 @@ import 'package:book_shop/core/colorApp.dart';
 import 'package:book_shop/widget/buttom.dart';
 import 'package:flutter/material.dart';
 
-class Welcom extends StatefulWidget {
+class Welcom extends StatelessWidget {
   const Welcom({super.key});
 
-  @override
-  State<Welcom> createState() => _WelcomState();
-}
-
-class _WelcomState extends State<Welcom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,10 +43,10 @@ class _WelcomState extends State<Welcom> {
                     textButtom: ("Login"),
                     backgroundcolor1: AppColor.primecolor,
                     onPressed: () {
-                      setState(() {
+                      
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => LoginPage()));
-                      });
+                      
                     },
                   ),
                   SizedBox(
@@ -62,10 +57,10 @@ class _WelcomState extends State<Welcom> {
                     textButtom: ("Register"),
                     backgroundcolor1: Colors.white,
                     onPressed: () {
-                      setState(() {
+                      
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => RegisterPage()));
-                      });
+                      
                     },
                   ),
                 ],

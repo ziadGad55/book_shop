@@ -5,14 +5,9 @@ import 'package:book_shop/widget/field.dart';
 import 'package:book_shop/widget/passfield.dart';
 import 'package:flutter/material.dart';
 
-class RegisterPage extends StatefulWidget {
+class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
 
-  @override
-  State<RegisterPage> createState() => _RegisterPageState();
-}
-
-class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,9 +135,9 @@ class _RegisterPageState extends State<RegisterPage> {
                   children: [
                     Text("Already have an account?"),
                 TextButton(onPressed: (){
-                  setState(() {
+                  
                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginPage()));
-                  });
+                  
                 }, child: Text("Login Now")),
                   ],
                 ),

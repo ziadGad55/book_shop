@@ -4,14 +4,9 @@ import 'package:book_shop/widget/buttom.dart';
 import 'package:book_shop/widget/field.dart';
 import 'package:flutter/material.dart';
 
-class Forgotpassword extends StatefulWidget {
+class Forgotpassword extends StatelessWidget {
   const Forgotpassword({super.key});
 
-  @override
-  State<Forgotpassword> createState() => _ForgotpasswordState();
-}
-
-class _ForgotpasswordState extends State<Forgotpassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,9 +52,8 @@ class _ForgotpasswordState extends State<Forgotpassword> {
                     children: [
                     Text("Remember Password?",style: TextStyle(fontSize: 15),),
                     TextButton(onPressed: (){
-                      setState(() {
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginPage()));
-                      });
+                      
                     }, child: Text("Login",style: TextStyle(
                       color: AppColor.primecolor,
                     ),)),
